@@ -15,4 +15,6 @@ public interface BankingRepository extends JpaRepository<Banking, Long> {
 
     @Query("SELECT b from Banking b WHERE b.customer.id = :customerId AND b.type = :type ORDER BY b.bankingDateTime DESC")
     List<Banking> findByCustomerIdAndType(@Param("customerId") Long customerId, @Param("type") TransactionType type);
+
+    List<Banking> findByAccountOrderByBankingDateTimeDesc(String account);
 }
