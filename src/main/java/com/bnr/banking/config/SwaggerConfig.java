@@ -23,7 +23,7 @@ public class SwaggerConfig {
                         .description("The backend API for the National Bank of Rwanda (NBR). It supports customer management, banking operations, and transaction handling.")
                         .contact(new Contact()
                                 .name("BNR IT Department")
-                                .email("it@nbr.rw")
+                                .email("it@bnr.rw")
                                 .url("https://www.bnr.rw")))
                 .servers(Arrays.asList(
                         new Server().url("http://localhost:8080").description("Local server"),
